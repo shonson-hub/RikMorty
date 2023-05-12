@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" href="img/rmicons/favicon.ico">
+    <title>Rick&Morty</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cursor"><p class="cloud"><span>12</span></p>
+        </div>
+        <!-- <a href="#pagination" class="back__top">^</a> -->
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="site__nav">
+                    <li class="site__item"><a href="#"  class="site__link site__link--active">Rick&Morty</a></li>
+                    <li class="site__item"><a href="#"  class="site__link">Link2</a></li>
+                    <li class="site__item"><a href="#"  class="site__link">Link3</a></li>
+                    <li class="site__item"><a href="#"  class="site__link">Link4</a></li>
+                </ul>
+                <ul class="user__nav">
+                    <li class="user__item"><a href="#"  class="user__link">Войти</a></li>
+                    <li class="user__item"><a href="#"  class="user__link">Регистрация</a></li>
+                </ul>
+            </nav>
+            <nav class="header__mobile">
+                <div class="logo__nav">Rick&Morty</div>
+                <button type="button" class="burger__nav"></button>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__swiper">
+                <div class="swiper__container">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+                        <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="title" data-swiper-parallax="-300">Раз</div>
+                                <div class="subtitle" data-swiper-parallax="-200">О чём это ваще?</div>
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>
+                                    Кто любит Рик и Морти? Все любят Рик и Морти! Ну или почти все... ! Научно-фантастический сериал 
+                                    , который с двух ног ворвался в современную поп-культуру и надолго закрепился в оной.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="title" data-swiper-parallax="-300">Два</div>
+                                <div class="subtitle" data-swiper-parallax="-200">Чё тут происходит?</div>
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>
+                                    Это посто страница отрисованная с помощю ajax запроса стороннего API, а конкретнее Rick&MortyApi. Полностью 
+                                    ну или почти полностью отрисованный с помощью чистого JavaScript с добалением некоторых библиотек для оживления конкретных элементов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="title" data-swiper-parallax="-300">Три</div>
+                                <div class="subtitle" data-swiper-parallax="-200">А чо тут с языком?Нипонял...!</div>
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>
+                                    Некоторые данные, показанные на странице, на англиском языке т.к. получаемое API 
+                                    полностью на англиском. И я перевёл лишь некоторые данные так-же с помощью JS. А именно самые основные и
+                                    те что встречаются чаще всего. Поэтому так всё произошло.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    </div>
+                </div>
+            <h2>Выберите персонажа!</h2>
+            <a name="main"></a>
+            <div class="main__container">
+                <aside class="main__aside">
+                    <div class="aside__container">
+                        <div class="aside__content">
+                            <h3>Unknown</h3>
+                            <picture>
+                                <img src="img/backRM.jpeg" alt="">
+                            </picture>
+                            <div class="aside__description">
+                                <ul class="description__list">
+                                    <li class="description__item">
+                                        <p>Статус:</p>
+                                        <b class="item__status-big">-</b>
+                                    </li>
+                                    <li class="description__item">
+                                        <p>Пол:</p>
+                                        <b class="item__gender">-</b>
+                                    </li>
+                                    <li class="description__item">
+                                        <p>Вид:</p>
+                                        <b class="item__species">-</b>
+                                    </li>
+                                    <li class="description__item">
+                                        <p>Родом из:</p>
+                                        <b class="item__origin">-</b>
+                                    </li>
+                                    <li class="description__item">
+                                        <p>Локация:</p>
+                                        <b class="item__location">-</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="aside__episodes"></div>
+                    </div>
+
+
+                </aside>
+                <section class="main__content">
+                    <div class="content__container">
+                        <div class="content__list"></div>
+                    </div>
+                </section>
+            </div>
+
+            <a name="pagination"></a>
+            <div class="main__pagination">
+                <button type="button" class="prev__button">Пред.</button>
+                <div class="pages__counter">
+                    <b><span class="current">1</span>/<span class="total">24</span></b>
+                </div>
+                <button type="button" class="next__button">След.</button>
+            </div>
+
+            <div class="episode-big" style="display: none;">
+                <div class="episode-big__container">
+                    <div class="episode-big__content">
+                        <h3 class="episode-big__title">kjdrhg fesfkjh</h3>
+                        <b class="episode-big__air-date">Дата премьеры - <span>2017</span></b>
+                        <div class="episode-big__info">
+                            <p class="info__season">Сезон - <span>1</span></p>
+                            <p class="info__episode">Эпизод - <span>2</span></p>
+                        </div>
+                        <ul class="episode-big__char-list">
+                            <li class="episode-big__char-item">
+                                <picture>
+                                    <img src="" alt="Фото персонажа">
+                                </picture>
+                            </li>
+                            <li class="episode-big__char-item">
+                                <picture>
+                                    <img src="" alt="Фото персонажа">
+                                </picture>
+                            </li>
+                            <li class="episode-big__char-item">
+                                <picture>
+                                    <img src="" alt="Фото персонажа">
+                                </picture>
+                            </li>
+                            <li class="episode-big__char-item">
+                                <picture>
+                                    <img src="" alt="Фото персонажа">
+                                </picture>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+        </main>
+        <footer class="footer">
+            <p>Данные взяты из источника:</p>
+            <a href="https://rickandmortyapi.com/">https://rickandmortyapi.com &#xa9</a>
+        </footer>
+        
+    </div>
+    <template id="item__char" style="display: none;">
+            <a href="#main" class="content__item">
+                <picture class="item__picture">
+                    <img class="item__img" src="img/backRM.jpeg" alt="">
+                </picture>
+                <div class="item__desc">
+                    <h3 class="item__name">Rick Sanchez</h3>
+                     <div class="item__status">
+                        <p>alive</p>
+                     </div>
+                    <p>Измерение:</p>
+                    <b class="item__origin">земля С-137</b>
+                    <p>Последний раз видели:</p>
+                    <b class="item__location">Цитадель Риков</b>
+                </div>
+
+            </a>
+    </template>
+
+    <template id="episode__item" style="display: none;">
+        <a type="button" class="aside__episode">Эпизод - <span></span><br></a>
+    </template>
+
+    <template id="episode__big">
+
+    </template>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    
+</body>
+</html>
